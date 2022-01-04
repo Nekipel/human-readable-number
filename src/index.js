@@ -22,7 +22,7 @@ module.exports = (num) => {
         const teen = Math.floor(int / 10);
         const zeroten = int - teen * 10;
         newInt = numTweNinteen[teen] + " " + oneTen(zeroten);
-        return newInt
+        return newInt.trim()
     }
     //88 eighty eight
     const hundreedInt =(int) => {

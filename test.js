@@ -32,12 +32,32 @@ describe("name from number", () => {
         let num4 = newNum(100);
         assert.deepEqual(num4,"one hundred");
     });
-    it("Test should pass if return five hundreed fourteen for 514", () => {
+    it("Test should pass if return five hundred fourteen for 514", () => {
         let num4 = newNum(514);
         assert.deepEqual(num4,"five hundred fourteen");
     });
-    it("Test should pass if return five hundreed ten for 510", () => {
+    it("Test should pass if return five hundred ten for 510", () => {
         let num4 = newNum(510);
         assert.deepEqual(num4,"five hundred ten");
+    });
+    it("Test should pass if return three hundred for 300", () => {
+        let num4 = newNum(300);
+        assert.deepEqual(num4,"three hundred");
+    });
+    it("Test should pass if return five hundred four for 504", () => {
+        let num4 = newNum(504);
+        assert.deepEqual(num4,"five hundred four");
+    });
+    it("Test should pass if return three hundred thirty three for 333", () => {
+        let num4 = newNum(333);
+        assert.deepEqual(num4,"three hundred thirty three");
+    });
+    it("Test should pass if return ten for 10", () => {
+        let num4 = newNum(10);
+        assert.deepEqual(num4,"ten");
+    });
+    it("Test should pass if return forty for 40", () => {
+        let num4 = newNum(40);
+        assert.deepEqual(num4,"forty");
     });
 });
