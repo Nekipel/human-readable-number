@@ -24,4 +24,20 @@ describe("name from number", () => {
         let num4 = newNum(64);
         assert.deepEqual(num4,"sixty four");
     });
+    it("Test should pass if return zero for 0", () => {
+        let num4 = newNum(0);
+        assert.deepEqual(num4,"zero");
+    });
+    it("Test should pass if return one hundred for 100", () => {
+        let num4 = newNum(100);
+        assert.deepEqual(num4,"one hundred");
+    });
+    it("Test should pass if return five hundreed fourteen for 514", () => {
+        let num4 = newNum(514);
+        assert.deepEqual(num4,"five hundred fourteen");
+    });
+    it("Test should pass if return five hundreed ten for 510", () => {
+        let num4 = newNum(510);
+        assert.deepEqual(num4,"five hundred ten");
+    });
 });
